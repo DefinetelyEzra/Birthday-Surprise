@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Cassie!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/envelope.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+<audio id="background-music" loop autoplay>
+    <source src="music/Sorry, I Love You.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+
+    <div id="birthday-screen">
+        <img id="birthday-gif" src="images/birthdaycat.gif" alt="Birthday GIF">
+        <h1>Happy Birthday, Cassie!</h1>
+        <div id="stars"></div>
+    </div>    
+
+    <canvas id="my-canvas"></canvas>
+
+    <div id="quiz" style="display:none;">
+        <h2>Is my birthday girl feeling amazing today?</h2>
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn" style="position: relative;">No</button>
+    </div>
+
+    <div id="present" style="display:none;">
+        <img id="gift-box" src="images/gift.gif" alt="Gift Box">
+        <button id="invisible-btn"></button> <!-- Invisible Button for Present -->
+    </div>    
+
+    <!-- Flower Div Section -->
+    <div id="flowers-section" style="display:none;">
+        <img id="flowers-gif" src="images/flowers.gif" alt="Bouquet of Flowers">
+        <h2>I knew you were! Here are some flowers for my beautiful girl</h2>
+        <button id="flowers-invisible-btn"></button> <!-- Invisible Button for Flowers -->
+    </div>
+
+    <div id="card" style="display:none;">
+        <p id="card-message"></p>
+        <button id="next-btn">Your Next surprise</button>
+    </div>
+
+    <!-- Envelope Animation Section -->
+<div id="envelope-section" style="display:none;">
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>From Ezra, to my dearest.</strong>
+                        <p>
+                            I am so proud of how far you have come, my hardworking girl. You mean the world to me, more so than the stars above. I can't wait to see how much farther you'll go.
+                            Your presence lights up my world in ways I never thought possible, yet here we are. Here I am, thinking of the words to use to express my undying love for you.
+                            You inspire me, as you inspire many around you. It will get hard, and when it does, don't you ever stop being who you are. I love you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+        <button id="move-on-btn" style="display: none;">You're Almost There</button>
+    </div>
+</div>
+
+<!-- Second Card Section -->
+<div id="card2" style="display:none;">
+    <p id="card-message2"></p>
+    <button id="one-btn">One Last Thing</button>
+</div>
+
+<!-- Video Section -->
+<div id="video-section" style="display:none;">
+    <video id="birthday-video" controls>
+        <source src="videos/vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+    <script src="js/particles.min.js"></script>
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
